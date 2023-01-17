@@ -1,0 +1,54 @@
+body {
+    margin: 0px;
+    padding:0px;           
+}
+
+.login-page-wrapper {
+    background-image: url('../../../public/images/back.png');
+    background-repeat: no-repeat;
+    background-size:cover; 
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;   
+}
+.login-page {
+    padding: 10px;
+    height:768px;
+    overflow: hidden;   
+    position: relative;       
+}
+
+.login-page-content{
+    position: relative; 
+}
+
+.login-page-content-section-question{
+    position: absolute;   
+    top:30%;
+    left:22%;
+}
+
+.login-page-content-section-authorization{
+    position: absolute;   
+    top:30%;
+    left:22%;
+}
+.login-page-content-section-registration{
+    position: absolute;   
+    top:20%;
+    left:22%;
+}
+
+.login-page-logo {
+    position: absolute;   
+    top:3%;
+    right:1%;       
+}
+
+.login-page-image {
+    max-width: 100%;
+    height: auto;    
+}
+
+

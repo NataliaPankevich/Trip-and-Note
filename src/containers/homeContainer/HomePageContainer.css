@@ -1,0 +1,90 @@
+.home-page-wrapper {
+    background-image: url('../../../public/images/back.png');
+    background-repeat: no-repeat;
+    background-size:cover; 
+} 
+.home-page {
+    position: relative;
+    border:1px solid black;
+}
+
+.home-page-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-home {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.home-page-info {
+    position: absolute;
+    top:22%;
+    left:13%;    
+}
+
+.home-page-info p {
+    text-align: left;
+}
+
+.home-page-trip-form {
+    border:1px solid black;
+    position: absolute;
+    top:28%;
+    left: 9%;   
+}
+
+.flex-container {
+    display:flex;
+    justify-content: space-between;
+}
+
+.trip-form-date-line {
+    border-bottom: 1px solid grey;
+}
+.home-page-trip-form-img, .home-page-trips-list-img {
+    width:20px;
+    height:14px;
+}
+
+.home-page-trips-list {
+    position: absolute;
+    top:36%;
+    left: 10%; 
+}
+
+.home-page-trips-map {
+    position: absolute;
+    top:36%;
+    left: 35%;     
+    margin-left:20px;
+}
+
+.home-page-trips-map iframe{
+    width:350px;
+    height:450px;
+    border-radius: 5px;
+}
+
+.trips-list-headline{
+    font-weight: bold; 
+    font-size: 25px;
+}
+
+.home-page-trips-list-item {   
+    margin-top: 20px;   
+}
+
+.trips-list-item-link {
+    text-decoration: none;
+    color:black;
+}
+
+.trips-list-item-country {
+    font-weight: bold; 
+    font-size: 28px;
+}
+.trips-list-item-date {
+    font-size: 18px;
+}

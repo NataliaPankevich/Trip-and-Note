@@ -1,0 +1,33 @@
+input {
+    background-color: #D9D9D9;
+    border:none;
+}
+
+p {
+    margin:5px;
+}
+b {
+    margin-left: 5px;
+}
+
+.registration-form {
+    margin-top: 40px;
+}
+
+.registration-form-item {
+    text-align: left;
+}
+
+.registration-form-icon {
+    color:black;
+}
+
+.registration-form-link {
+    margin-top: 63px;
+    text-align: right;  
+}
+.registration-form-btn {
+    border: none;
+    background-color:#fff;
+
+}

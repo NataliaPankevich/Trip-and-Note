@@ -1,0 +1,119 @@
+.trip-page-wrapper {
+    background-image: url('../../../public/images/back.png');
+    background-repeat: no-repeat;
+    background-size:cover; 
+} 
+.trip-page {
+    position: relative;
+    border:1px solid black;
+}
+.trip-page-icon {
+    color:black;
+    margin:0px;
+}
+.trip-page-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-trip {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.trip-page-info {
+    position: absolute;
+    top:21%;
+    left:8%;    
+   
+}
+
+.trip-page-info p {
+    text-align: left;
+  
+   
+}
+
+.trip-page-note-form {
+    position: absolute;
+    top:28%;
+    left: 9%;  
+    border:1px solid black;  
+}
+.trip-page-note-form-child {
+    margin:5px 30px 5px 50px;
+    border:1px solid black;
+}
+
+.flex-container {
+    display:flex;
+    justify-content: space-between;
+}
+
+.note-form-date-line {
+    border-bottom: 1px solid grey;
+}
+.trip-page-note-form-img, .trip-page-notes-list-img {
+    width:20px;
+    height:14px;
+}
+
+.trip-page-notes-list {
+    position: absolute;
+    top:36%;
+    left: 10%; 
+}
+.notes-list-headline{
+    font-weight: bold; 
+    font-size: 25px;
+}
+
+.trip-page-notes-list-item {   
+    margin-top: 20px;   
+}
+
+
+.notes-list-item-city {
+    font-weight: bold; 
+    font-size: 28px;
+    border:1px solid black;
+}
+.notes-list-item-date {
+    font-size: 18px;
+    text-align: right;
+}
+.notes-list-headline {
+    font-weight: bold; 
+    font-size: 25px;
+    text-align: left;
+}
+
+.trip-page-notes-list-child{
+    min-width: 30%;
+    margin:5px 100px 5px 10px;
+    border:1px solid black; 
+    position: relative;
+}
+
+.notes-list-item-city {
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    margin-left:50px;
+}
+.notes-list-item-title {
+    color:#fff;
+    text-shadow: 1px 1px 1px grey;
+    font-size: 20px;
+}
+.notes-list-item-photo {
+    background-color: #D9D9D9;
+    border:1px solid black;
+    width:200px;
+    height:100px;
+}
+.notes-list-item-link {
+    position: absolute;
+    top:80px;
+    left:130px;
+}

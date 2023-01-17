@@ -1,0 +1,82 @@
+.note-page-wrapper {
+    background-image: url('../../../public/images/back.png');
+    background-repeat: no-repeat;
+    background-size:cover; 
+} 
+.container-note {
+    max-width: 1200px;
+    margin: 0 auto;   
+}
+
+.flex-container {
+    display:flex;
+    justify-content: space-between;    
+}
+
+.note-page {
+    position: relative;
+    border:1px solid red;
+}
+
+.note-page-back-link {
+    position:absolute;
+    top:20%;
+    left:8%;
+    color:black;
+}
+
+.note-page-content {
+    position:absolute;
+    top:30%;  
+    left:8%;    
+    border:1px solid black;
+}
+
+.note-page-content-child {
+    min-width: 350px;
+}
+
+
+.note-page-note-title {
+    border:1px solid black;
+    margin-right:90px;
+    min-width: 150px;
+}
+
+
+
+.note-form-date-line {
+    border-bottom: 1px solid grey;
+}
+
+.note-page-note-title-img {
+    width:35px;
+    height:20px; 
+    border: 1px solid black;
+    margin: 0px;  
+}
+
+.note-page-note-title-city {
+    font-weight: bold; 
+    font-size: 28px;
+    min-width:210px;
+    border: 1px solid black;
+   
+}
+
+.note-page-note-title-date {
+    font-size: 18px;
+    text-align: right;
+}
+.note-page-note-text-wrapper {    
+    min-height: 200px;
+    background-color: #D9D9D9;
+    padding: 5px;
+}
+
+.note-page-note-text {
+    max-width: 350px;
+}
+.note-page-note-text p {
+    word-break: break-all;
+}

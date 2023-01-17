@@ -1,0 +1,50 @@
+input {
+    background-color: #D9D9D9;
+    border:none; 
+}
+
+p {
+    margin:5px;
+}
+b {
+    margin-left: 5px;
+}
+.authorization-form-item {
+    text-align: left;
+}
+.authorization-form-link {
+    margin-top: 112px;
+    text-align: right;  
+}
+
+.authorization-form-icon {
+    color:black;
+}
+
+
+input {
+    background-color: #D9D9D9;
+    border:none;
+}
+
+p {
+    margin:5px;
+}
+b {
+    margin-left: 5px;
+}
+
+
+.authorization-form-icon {
+    color:black;
+}
+
+.authorization-form-link {
+    margin-top: 63px;
+    text-align: right;  
+}
+.authorization-form-btn {
+    border: none;
+    background-color:#fff;
+
+}

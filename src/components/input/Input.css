@@ -1,0 +1,20 @@
+.trip-form-country-input {
+    width:130px;
+    border-radius: 5px;
+    margin:5px;
+}
+.trip-form-date-input {
+    width:92px;
+    border-radius: 5px;
+    margin:5px 5px 5px 5px;
+}
+.note-form-date-input {
+    width:92px;
+    border-radius: 5px;
+    margin:5px 5px 5px 90px;
+}
+.note-form-city-input {
+    width:92px;
+    border-radius: 5px;
+    margin:5px;   
+}

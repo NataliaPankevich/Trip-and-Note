@@ -1,0 +1,81 @@
+.note-form {
+    border:1px solid black;
+}
+
+.note-form-tools {
+    display: flex;
+    justify-content: space-between;
+    background-color: #D9D9D9;
+    margin-bottom: 15px;
+}    
+.note-form-tools button {
+  margin: 10px 2px;
+}
+  
+.note-form-tools select {
+  margin: 10px 2px;
+  font-size:12px;
+  border-radius: 5px;
+}
+
+.note-text {
+    background-color: #D9D9D9;
+    width:350px;   
+    height:200px; 
+}
+
+.align-left {
+    text-align: left;
+}
+.align-center {
+    text-align:center;
+}
+.align-justify {
+    text-align: justify;
+}
+.align-right {
+    text-align: right;
+}
+
+
+.size-12 {
+    font-size:12px;
+}
+.size-14 {
+    font-size:14px;
+}
+.size-16 {
+    font-size:16px;
+}
+.size-18 {
+    font-size:18px;
+}
+
+.weight-Regular {
+    font-weight: 100;
+}
+.weight-Bold {
+    font-weight:bold;
+}
+.weight-Italic {
+    font-style:italic;
+}
+
+.comic {
+    font-family: 'Comic Sans MS', 'Comic Neue';
+} 
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+
+.verdana {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+.times {
+    font-family: 'Times New Roman', Times, serif;
+} 

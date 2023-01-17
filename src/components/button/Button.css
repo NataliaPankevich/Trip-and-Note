@@ -1,0 +1,56 @@
+.main-page-button {
+    position: absolute;   
+    top:47.5%;
+    left:30%;
+    width: 35px;
+    height: 35px;
+    border:1px solid rgb(99, 99, 99);
+    border-radius: 17px;
+    background-image: radial-gradient(white,grey);
+}
+.main-page-button:hover {
+    border:1px solid rgb(5, 5, 5);
+    background-image: radial-gradient(white,rgb(22, 22, 22));
+}
+
+.login-page-button {
+    border:none;
+    background-color: rgb(255, 255, 255, 0);
+}
+
+.home-page-showForm-btn {
+    width:150px;   
+    border:1px solid grey; 
+    border-radius: 5px;    
+    margin-left: 30px;
+}
+.home-page-addTrip-btn {
+    width:40px;    
+    border:1px solid grey;
+    border-radius: 5px;
+}
+.home-page-deleteTrip-btn {
+    border:1px solid grey;
+    width:40px;    
+    border-radius: 5px;
+}
+.trip-page-showForm-btn {
+    width:150px;   
+    border:1px solid grey; 
+    border-radius: 5px;    
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.trip-page-addNote-btn {
+    width:40px;    
+    border:1px solid grey;
+    border-radius: 5px;
+    margin:0px 10px;
+}
+
+.trip-page-deleteNote-btn {
+    margin:0px 20px;
+    width:70px;
+    border-radius: 5px; 
+}
