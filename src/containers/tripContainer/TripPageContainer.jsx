@@ -86,144 +86,144 @@ export const TripPageContainer = () => {
   }, [noteIndex]);
 
   useEffect(() => {
-    setPageTitle(user.trips[tripIndex].country)
-  },);
+    setPageTitle(user.trips[tripIndex].country);
+  });
 
   return (
     <div className="trip-page-wrapper">
       <div className="trip-page container-trip">
-        <div className="trip-page-info">
-          <div className="flex-container">
-            <Link to="/home">
-              <Icon
-                className="trip-page-icon"
-                icon="material-symbols:arrow-right-alt-rounded"
-                hFlip={true}
-                width="45"
-              />
-            </Link>
-            <Button
-              style="trip-page-showForm-btn"
-              onClick={() => {
-                setShowNoteForm(true);
-              }}
-              text="+note"
-            />
-          </div>
-        </div>
-
-        <div className="trip-page-note-form">
-          {showNoteForm ? (
-            <div className="flex-container">
-              <div className="trip-page-note-form-child">
-                <div className="flex-container">
-                  <img
-                    className="trip-page-note-form-img"
-                    src="../../images/img.png"
-                    alt=""
-                  />
-                  <Button
-                    onClick={addNote}
-                    style="trip-page-addNote-btn"
-                    text="+"
-                  />
-
-                  <Input
-                    name="city"
-                    value={note.city}
-                    onChange={readingInput}
-                    style="note-form-city-input"
-                    type="text"
-                    placeholder="Enter city..."
-                  />
-                </div>
-                <div className="note-form-date-line"></div>
-                <div className="flex-container">
-                  <Input
-                    name="date"
-                    value={note.date}
-                    style="note-form-date-input"
-                    onChange={readingInput}
-                    type="text"
-                    placeholder="Date..."
-                  />
-                </div>
-              </div>
-
-              <div className="trip-page-note-form-child">
-                <div>
-                  <Input
-                    type="file"
-                    name="photo"
-                    value={note.photo}
-                    style="trip-form-photo-input"
-                    onChange={readingInput}
-                  />
-                </div>
-              </div>
-            </div>
-          ) : null}
-        </div>
-
-        <div className="trip-page-notes-list">
-          <div className="notes-list-headline">
-            <p>Notes list:</p>
-          </div>
-          {notes.map((item, index) => (
-            <div
-              className="trip-page-notes-list-item flex-container"
-              key={index}
-            >
-              <div className="trip-page-notes-list-child">
-                <div className="flex-container">
-                  <img
-                    className="trip-page-notes-list-img"
-                    src="../../images/img.png"
-                    alt=""
-                  />
-                  <Link className="notes-list-item-city" to="/home/notepage">
-                    <p onClick={() => {
-                      setNoteIndex(index)
-                      setPageTitle(item.city)}}>{item.city}</p>
-                  </Link>
-                </div>
-                <div className="note-form-date-line"></div>
-
-                <div>
-                  <p className="notes-list-item-date">{item.date}</p>
-                </div>
-              </div>
-
-              <div className="trip-page-notes-list-child flex-container">
-                
-                <div className="notes-list-item-photo">
-                  <div className="notes-list-item-title">{item.city}</div>
-                  <img src={note.photo} alt="" />
-                </div>
-
-                <Link className="notes-list-item-link" to="/home/notepage">
-                  <Icon
-                    onClick={() => setNoteIndex(index)}
-                    icon="material-symbols:play-arrow-rounded"
-                  />
-                </Link>
-
-                <Button
-                  onClick={() => deleteNote(index)}
-                  style="trip-page-deleteNote-btn"
-                  text="-note"
+        <div className="trip-page-content">
+          <div className="trip-page-content-top">
+            <div className="trip-page-info">
+              <Link to="/home">
+                <Icon
+                  className="trip-page-icon"
+                  icon="material-symbols:arrow-right-alt-rounded"
+                  hFlip={true}
+                  width="45"
                 />
-              </div>
+              </Link>
+              <Button
+                style="trip-page-showForm-btn"
+                onClick={() => {
+                  setShowNoteForm(true);
+                }}
+                text="+note"
+              />
             </div>
-          ))}
-        </div>
 
-        <div>
-          <img
-            className="trip-page-img"
-            src="../../images/backgroundHomePage.png"
-            alt=""
-          />
+            <div className="trip-page-note-form">
+              {showNoteForm ? (
+                <div className="flex-container-form">
+                  <div className="trip-page-note-form-child">
+                    <div className="flex-container">
+                      <img
+                        className="trip-page-note-form-img"
+                        src="../../images/img.png"
+                        alt=""
+                      />
+                      <Button
+                        onClick={addNote}
+                        style="trip-page-addNote-btn"
+                        text="+"
+                      />
+
+                      <Input
+                        name="city"
+                        value={note.city}
+                        onChange={readingInput}
+                        style="note-form-city-input"
+                        type="text"
+                        placeholder="Enter city..."
+                      />
+                    </div>
+                    <div className="note-form-date-line"></div>
+                    <div>
+                      <Input
+                        name="date"
+                        value={note.date}
+                        style="note-form-date-input"
+                        onChange={readingInput}
+                        type="text"
+                        placeholder="Date..."
+                      />
+                    </div>
+                  </div>
+
+                  <div className="trip-page-note-form-child">
+                    <div>
+                      <Input
+                        type="file"
+                        name="photo"
+                        value={note.photo}
+                        style="trip-form-photo-input"
+                        onChange={readingInput}
+                      />
+                    </div>
+                  </div>
+                </div>
+              ) : null}
+            </div>
+          </div>
+
+          <div className="trip-page-notes-list">
+            <div className="notes-list-headline">
+              <p>Notes list:</p>
+            </div>
+            {notes.map((item, index) => (
+              <div
+                className="trip-page-notes-list-item flex-container"
+                key={index}
+              >
+                <div className="trip-page-notes-list-child">
+                  <div className="flex-container">
+                    <img
+                      className="trip-page-notes-list-img"
+                      src="../../images/img.png"
+                      alt=""
+                    />
+                    <Link className="notes-list-item-city" to="/home/notepage">
+                      <p
+                        onClick={() => {
+                          setNoteIndex(index);
+                          setPageTitle(item.city);
+                        }}
+                      >
+                        {item.city}
+                      </p>
+                    </Link>
+                  </div>
+                  <div className="note-form-date-line"></div>
+
+                  <div>
+                    <p className="notes-list-item-date">{item.date}</p>
+                  </div>
+                </div>
+
+                <div className="trip-page-notes-list-child flex-container">
+                  <div className="notes-list-item-photo">
+                    <div className="notes-list-item-title">{item.city}</div>
+                    <img src={note.photo} alt="" />
+                  </div>
+
+                  <Link className="notes-list-item-link" to="/home/notepage">
+                    <Icon
+                      onClick={() => setNoteIndex(index)}
+                      icon="material-symbols:play-arrow-rounded"
+                    />
+                  </Link>
+
+                  <div>
+                    <Button
+                      onClick={() => deleteNote(index)}
+                      style="trip-page-deleteNote-btn"
+                      text="-note"
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

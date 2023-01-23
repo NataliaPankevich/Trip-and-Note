@@ -69,51 +69,56 @@ export const NoteForm = () => {
   return (
     <div className="note-form">
       <div className="note-form-tools">
-        <button onClick={textAlignLeft}>
-          <Icon icon="clarity:align-left-text-line" />
-        </button>
-        <button onClick={textAlignCenter}>
-          <Icon icon="clarity:center-text-line" />
-        </button>
-        <button onClick={textAlignJustify}>
-          <Icon icon="clarity:justify-text-line" />
-        </button>
-        <button onClick={textAlignRight}>
-          <Icon icon="clarity:align-right-text-line" />
-        </button>
-        <select
-          value={text.font}
-          onChange={(event) => {
-            setText({ ...text, font: event.target.value });
-          }}
-        >
-          <option defaultValue="times">Times New</option>
-          <option value="comic">Comic Sans</option>
-          <option value="arial">Arial</option>
-          <option value="georgia">Georgia</option>
-          <option value="verdana">Verdana</option>
-        </select>
-        <select
-          value={text.fontWeight}
-          onChange={(event) => {
-            setText({ ...text, fontWeight: event.target.value });
-          }}
-        >
-          <option defaultValue="weight-Regular">Regular</option>
-          <option value="weight-Bold">Bold</option>
-          <option value="weight-Italic">Italic</option>
-        </select>
-        <select
-          value={text.fontSize}
-          onChange={(event) => {
-            setText({ ...text, fontSize: event.target.value });
-          }}
-        >
-          <option defaultValue="size-12"> 12</option>
-          <option value="size-14">14</option>
-          <option value="size-16">16</option>
-          <option value="size-18">18</option>
-        </select>
+        <div>
+          <button onClick={textAlignLeft}>
+            <Icon icon="clarity:align-left-text-line" />
+          </button>
+          <button onClick={textAlignCenter}>
+            <Icon icon="clarity:center-text-line" />
+          </button>
+          <button onClick={textAlignJustify}>
+            <Icon icon="clarity:justify-text-line" />
+          </button>
+          <button onClick={textAlignRight}>
+            <Icon icon="clarity:align-right-text-line" />
+          </button>
+        </div>
+
+        <div>
+          <select
+            value={text.font}
+            onChange={(event) => {
+              setText({ ...text, font: event.target.value });
+            }}
+          >
+            <option defaultValue="times">Times New</option>
+            <option value="comic">Comic Sans</option>
+            <option value="arial">Arial</option>
+            <option value="georgia">Georgia</option>
+            <option value="verdana">Verdana</option>
+          </select>
+          <select
+            value={text.fontWeight}
+            onChange={(event) => {
+              setText({ ...text, fontWeight: event.target.value });
+            }}
+          >
+            <option defaultValue="weight-Regular">Regular</option>
+            <option value="weight-Bold">Bold</option>
+            <option value="weight-Italic">Italic</option>
+          </select>
+          <select
+            value={text.fontSize}
+            onChange={(event) => {
+              setText({ ...text, fontSize: event.target.value });
+            }}
+          >
+            <option defaultValue="size-12"> 12</option>
+            <option value="size-14">14</option>
+            <option value="size-16">16</option>
+            <option value="size-18">18</option>
+          </select>
+        </div>
       </div>
       <textarea
         className={style}

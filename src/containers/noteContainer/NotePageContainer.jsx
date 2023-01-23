@@ -11,7 +11,6 @@ import { NoteForm } from "../../components/noteForm/NoteForm";
 import { Context3 } from "../../components/context/Context";
 
 export const NotePageContainer = () => {
-
   const [pageTitle, setPageTitle] = useContext(Context3);
   const [user, setUser] = useState(() => {
     let savedEmail = localStorage.getItem("email");
@@ -55,78 +54,77 @@ export const NotePageContainer = () => {
   }, [noteIndex]);
 
   useEffect(() => {
-    setPageTitle(user.trips[tripIndex].notes[noteIndex].city)
-  },);
+    setPageTitle(user.trips[tripIndex].notes[noteIndex].city);
+  });
 
   return (
     <div className="note-page-wrapper">
       <div className="note-page container-note">
-        <Link className="note-page-back-link" to="/home/trippage">
-          <Icon
-            className=""
-            icon="material-symbols:arrow-right-alt-rounded"
-            hFlip={true}
-            width="45"
-          />
-        </Link>
+        <div className="note-page-content">
+          <div className="note-page-back-link">
+            <Link  to="/home/trippage">
+              <Icon
+                className=""
+                icon="material-symbols:arrow-right-alt-rounded"
+                hFlip={true}
+                width="45"
+              />
+            </Link>
+          </div>
 
-        <div className="note-page-content flex-container">
-          <div className="note-page-content-child">
-            <div className="note-page-note-title">
-              <div className="flex-container">
-                <div>
-                  <img
-                    className="note-page-note-title-img"
-                    src="../../images/img.png"
-                    alt=""
-                  />
+          <div className="flex-container-note">
+            <div className="note-page-content-child">
+              <div className="note-page-note-title">
+                <div className="flex-container-title">
+                  <div>
+                    <img
+                      className="note-page-note-title-img"
+                      src="../../images/img.png"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <p className="note-page-note-title-city">
+                      {user.trips[tripIndex].notes[noteIndex].city}
+                    </p>
+                  </div>
                 </div>
+
+                <div className="note-form-date-line"></div>
                 <div>
-                  <p className="note-page-note-title-city">
-                    {user.trips[tripIndex].notes[noteIndex].city}
+                  <p className="note-page-note-title-date">
+                    {user.trips[tripIndex].notes[noteIndex].date}
                   </p>
                 </div>
               </div>
+            </div>
 
-              <div className="note-form-date-line"></div>
-              <div>
-                <p className="note-page-note-title-date">
-                  {user.trips[tripIndex].notes[noteIndex].date}
-                </p>
+            <div className="note-page-content-child">
+              <div className="note-page-note-info">
+                {showTextForm ? (
+                  <div className="note-page-note-form">
+                    <NoteForm />
+                    <Button onClick={addNoteInfo} style="" text="Done!" />
+                  </div>
+                ) : (
+                  <div className="note-page-note">
+                    <div className="note-page-note-text-wrapper">
+                      <div className="note-page-note-text">
+                        <p>
+                          {user.trips[tripIndex].notes[noteIndex].description}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="note-page-note-photo">
+                      {user.trips[tripIndex].notes[noteIndex].photo}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
-
-          <div className="note-page-content-child">
-            <div className="note-page-note-info">
-              {showTextForm ? (
-                <div className="note-page-note-form">
-                  <NoteForm />
-                  <Button onClick={addNoteInfo} style="" text="Done!" />
-                </div>
-              ) : (
-                <div className="note-page-note">
-                  <div className="note-page-note-text-wrapper">
-                    <div className="note-page-note-text">
-                      <p>
-                        {user.trips[tripIndex].notes[noteIndex].description}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="note-page-note-photo">
-                    {user.trips[tripIndex].notes[noteIndex].photo}
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
         </div>
-        <img
-          className="trip-page-img"
-          src="../../images/backgroundHomePage.png"
-          alt=""
-        />
       </div>
     </div>
   );

@@ -31,3 +31,8 @@ b {
     background-color:#fff;
 
 }
+@media all and (max-width:580px) {
+    .registration-form-link {
+        margin-top: 13px;        
+    }  
+}

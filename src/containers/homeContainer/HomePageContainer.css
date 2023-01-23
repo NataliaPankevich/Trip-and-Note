@@ -1,90 +1,227 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
 .home-page-wrapper {
     background-image: url('../../../public/images/back.png');
     background-repeat: no-repeat;
-    background-size:cover; 
-} 
-.home-page {
-    position: relative;
-    border:1px solid black;
-}
-
-.home-page-img {
-    max-width: 100%;
-    height: auto;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
 }
 
 .container-home {
     max-width: 1200px;
-    margin: 0 auto; 
+    margin: 0 auto;
+}
+
+.home-page {
+    background-image: url('../../../public/images/Home5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid black;
+}
+
+.home-page-content {
+    position: relative;
+    background-image: url('../../../public/images/OpenBook6.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 73%;
+    height: 79vh;
+    margin-top: 17vh;
+    margin-left: 5vh;
+    padding: 3.5vw 5vw 3.5vw 8vw;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.home-page-trip-form {
+    margin: 10px 0px 30px 20px;
 }
 
 .home-page-info {
-    position: absolute;
-    top:22%;
-    left:13%;    
+    border: 1px solid black;
+    text-align: left;
 }
 
 .home-page-info p {
     text-align: left;
 }
 
-.home-page-trip-form {
-    border:1px solid black;
-    position: absolute;
-    top:28%;
-    left: 9%;   
-}
-
 .flex-container {
-    display:flex;
+    display: flex;
     justify-content: space-between;
+    border: 1px solid red;
 }
 
 .trip-form-date-line {
     border-bottom: 1px solid grey;
 }
-.home-page-trip-form-img, .home-page-trips-list-img {
-    width:20px;
-    height:14px;
-}
 
-.home-page-trips-list {
-    position: absolute;
-    top:36%;
-    left: 10%; 
+.home-page-trip-form-img,
+.home-page-trips-list-img {
+    width: 20px;
+    height: 14px;
 }
 
 .home-page-trips-map {
+    width: 47%;
+    height: 100%;
+    border: 1px solid black;
+    overflow: hidden;
+    padding-bottom: 66%;
+    position: relative;
+    height: 0;
+}
+
+.home-page-trips-map iframe {
+    border-radius: 3px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
     position: absolute;
-    top:36%;
-    left: 35%;     
-    margin-left:20px;
 }
 
-.home-page-trips-map iframe{
-    width:350px;
-    height:450px;
-    border-radius: 5px;
-}
-
-.trips-list-headline{
-    font-weight: bold; 
+.trips-list-headline {
+    font-weight: bold;
     font-size: 25px;
 }
 
-.home-page-trips-list-item {   
-    margin-top: 20px;   
+.home-page-trips-list-item {
+    margin-top: 20px;
 }
 
 .trips-list-item-link {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
 .trips-list-item-country {
-    font-weight: bold; 
+    font-weight: bold;
     font-size: 28px;
 }
+
 .trips-list-item-date {
     font-size: 18px;
+}
+
+@media all and (max-width:1200px) {
+
+    .home-page-content {
+        margin-top: 18vh;
+    }
+}
+
+@media all and (max-width:1150px) {
+    .home-page-content {
+        margin: 18vh 0px 0px 5vh;
+    }
+
+    .trips-list-headline p {
+        border: 1px solid black;
+    }
+
+    .home-page-trip-form {
+        margin: 10px 0px 15px 10px;
+    }
+}
+
+@media all and (max-width:1100px) {
+    .home-page-content {
+
+        height: 75vh;
+    }
+
+    .trips-list-headline {
+        font-size: 20px;
+    }
+
+    .home-page-trips-list-item {
+        margin-top: 10px;
+    }
+
+    .trips-list-item-country {
+
+        font-size: 23px;
+    }
+
+    .trips-list-item-date {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width:940px) {
+    .home-page {
+        background-image: url('');
+    }
+
+    .home-page-content {
+        margin: 18vh auto 0px;
+    }
+
+    .home-page-content {
+        width: 85%;
+        height: 72vh;
+    }
+}
+
+@media all and (max-width:850px) {
+
+    .home-page-content {
+        height: 70vh;
+    }
+}
+
+@media all and (max-width:780px) {
+
+    .home-page-content {
+        width: 90%;
+        height: 68vh;
+    }
+}
+
+@media all and (max-width:750px) {
+
+    .home-page-content {
+        background-image: url('../../../public/images/OpenBook7.png');
+        width: 57%;
+        height: 73vh;
+        padding: 7vw 5vw 3.5vw 8vw;
+        margin: 18vh 0px 0px;
+    }
+
+    .home-page-trips-map {
+        display: none;
+    }
+
+    .home-page {
+        background-image: url('../../../public/images/Home9.png');
+    }
+}
+
+@media all and (max-width:650px) {
+    .home-page {
+        background-image: url('../../../public/images/Home10.png');
+    }
+
+    .home-page-content {
+        width: 67%;
+        height: 73vh;
+    }
+}
+
+@media all and (max-width:600px) {
+    .home-page {
+        background-image: url('');
+    }
+
 }

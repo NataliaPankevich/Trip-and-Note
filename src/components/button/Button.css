@@ -1,7 +1,7 @@
-.main-page-button {
-    position: absolute;   
-    top:47.5%;
-    left:30%;
+.main-page-button { 
+    position: absolute;
+    top:60%;
+    left:65%; 
     width: 35px;
     height: 35px;
     border:1px solid rgb(99, 99, 99);
@@ -21,8 +21,8 @@
 .home-page-showForm-btn {
     width:150px;   
     border:1px solid grey; 
-    border-radius: 5px;    
-    margin-left: 30px;
+    border-radius: 5px; 
+    margin-left:80px;  
 }
 .home-page-addTrip-btn {
     width:40px;    
@@ -38,8 +38,8 @@
     width:150px;   
     border:1px solid grey; 
     border-radius: 5px;    
-    margin-left: 50px;
-    margin-right: 20px;
+   margin-left: 8vw;
+
 }
 
 .trip-page-addNote-btn {
@@ -54,3 +54,35 @@
     width:70px;
     border-radius: 5px; 
 }
+
+@media all and (max-width:1230px) {
+    .main-page-button {           
+        width: 32px;
+        height: 32px;      
+    }
+}
+
+@media all and (max-width:930px) {
+    .main-page-button {           
+        width: 30px;
+        height: 30px;      
+    }
+}
+@media all and (max-width:800px) {
+    .trip-page-showForm-btn {
+        margin-top:20px;  
+    }
+     .trip-page-deleteNote-btn {
+        margin:0px 10px;
+        width:60px;      
+    }
+}
+
+
+@media all and (max-width:750px) {
+    .home-page-showForm-btn {
+        margin-left:0px;  
+    }
+} 
+
+

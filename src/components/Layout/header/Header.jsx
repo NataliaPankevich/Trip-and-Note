@@ -18,9 +18,9 @@ export const Header = () => {
     <div className="header-wrapper">
       <div className="header container-header">
         <div className="header-user-info">
-          <div>
+          <di className="header-user-photo"v>
             <img src="./images/userPhoto.png" alt="photo" />
-          </div>
+          </di>
           <div className="header-user-name">
             <p>{user.name}</p>
           </div>
@@ -30,7 +30,7 @@ export const Header = () => {
           <p>{pageTitle}</p>
         </div>
 
-        <div>
+        <div className="header-logo">
           <Link to='/' >
             <img src="./images/logo-mini.png" alt="logo" />
           </Link>

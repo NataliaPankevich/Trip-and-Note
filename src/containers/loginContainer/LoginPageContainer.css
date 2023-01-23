@@ -1,54 +1,197 @@
 body {
     margin: 0px;
-    padding:0px;           
+    padding: 0px;
 }
 
 .login-page-wrapper {
     background-image: url('../../../public/images/back.png');
     background-repeat: no-repeat;
-    background-size:cover; 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
 }
+
 .container {
     max-width: 1400px;
-    margin: 0 auto;   
+    margin: 0 auto;
 }
+
 .login-page {
-    padding: 10px;
-    height:768px;
-    overflow: hidden;   
-    position: relative;       
+    height: 100vh;
+    overflow: visible;
+    position: relative;
 }
 
-.login-page-content{
-    position: relative; 
-}
+.login-page-content {
 
-.login-page-content-section-question{
-    position: absolute;   
-    top:30%;
-    left:22%;
-}
-
-.login-page-content-section-authorization{
-    position: absolute;   
-    top:30%;
-    left:22%;
-}
-.login-page-content-section-registration{
-    position: absolute;   
-    top:20%;
-    left:22%;
+    background-image: url('../../../public/images/Notebook4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
 }
 
 .login-page-logo {
-    position: absolute;   
-    top:3%;
-    right:1%;       
+    position: absolute;
+    top: 3%;
+    right: 10%;
 }
 
-.login-page-image {
-    max-width: 100%;
-    height: auto;    
+.login-page-content-section-question,
+.login-page-content-section-authorization,
+.login-page-content-section-registration {
+    position: relative;
+    background-image: url('../../../public/images/OpenBook1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 731px;
+    height: 565px;    
+}
+
+.login-page-content-text {
+    position: absolute;
+    top: 38%;
+    left: 45%;
+}
+
+.login-page-content-text-regForm {
+    position: absolute;
+    top: 18%;
+    left: 45%;
+}
+
+@media all and (max-width:1220px) {
+    .login-page-content {
+        background-image: url('../../../public/images/Notebook5.png');
+    }
+}
+
+@media all and (max-width:1120px) {
+
+    .login-page-content-section-question,
+    .login-page-content-section-authorization,
+    .login-page-content-section-registration {
+        width: 700px;
+        height: 541px;
+    }
+}
+
+@media all and (max-width:1120px) {
+    .login-page-content {
+        background-image: url('');
+    }
+}
+
+@media all and (max-width:1000px) {
+    .login-page-logo {
+        position: absolute;
+        top: 2%;
+        right: 5%;
+    }
+}
+
+@media all and (max-width:850px) {
+
+    .login-page-content-section-question,
+    .login-page-content-section-authorization,
+    .login-page-content-section-registration {
+        background-image: url('../../../public/images/OpenBook2.png');
+        width: 551px;
+        height: 536px;
+    }
+
+    .login-page-content-text {
+        position: absolute;
+        top: 38%;
+        left: 35%;
+    }
+
+    .login-page-content-text-regForm {
+        position: absolute;
+        top: 18%;
+        left: 35%;
+    }
+
+    .login-page-content {
+        padding-top: 7vh;
+        padding-bottom: 5vh;
+    }
+}
+
+@media all and (max-width:680px) {
+
+    .login-page-content-section-question,
+    .login-page-content-section-authorization,
+    .login-page-content-section-registration {
+        background-image: url('../../../public/images/OpenBook4.png');
+        width: 486px;
+        height: 550px;
+    }
+
+    .login-page-content-text {
+        position: absolute;
+        top: 38%;
+        left: 20%;
+    }
+
+    .login-page-content-text-regForm {
+        position: absolute;
+        top: 18%;
+        left: 20%;
+    }
+
+    .login-page-content {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+}
+
+@media all and (max-width:640px) {
+    .login-page-logo {
+        position: absolute;
+        top: 1%;
+        right: 2%;
+    }
 }
 
 
+@media all and (max-width:580px) {
+
+    .login-page-content-section-question,
+    .login-page-content-section-authorization,
+    .login-page-content-section-registration {
+        width: 353px;
+        height: 400px;
+    }
+    .login-page-content-text {
+        position: absolute;
+        top: 35%;
+        left: 10%;
+    }
+    .login-page-content-text-regForm {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+    .login-page-logo img {
+        width: 140px;
+    }
+    .login-page-logo {
+        position: absolute;
+        top: 3%;
+        right: 5%;
+    }
+
+}
+@media all and (max-width:400px) {
+    .login-page-logo {
+       display: none;
+    }   
+
+}

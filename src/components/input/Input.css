@@ -18,3 +18,9 @@
     border-radius: 5px;
     margin:5px;   
 }
+
+@media all and (max-width:1200px) {
+    .note-form-date-input {
+       margin:5px 5px 5px 10px;
+    }
+}

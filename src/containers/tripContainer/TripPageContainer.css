@@ -1,119 +1,308 @@
 .trip-page-wrapper {
     background-image: url('../../../public/images/back.png');
     background-repeat: no-repeat;
-    background-size:cover; 
-} 
-.trip-page {
-    position: relative;
-    border:1px solid black;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
 }
-.trip-page-icon {
-    color:black;
-    margin:0px;
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
 }
-.trip-page-img {
-    max-width: 100%;
-    height: auto;
-}
-
 .container-trip {
     max-width: 1200px;
-    margin: 0 auto; 
+    margin: 0 auto;
+}
+
+.trip-page {
+    background-image: url('../../../public/images/Home5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid black;
+}
+
+.trip-page-content {
+    position: relative;
+    background-image: url('../../../public/images/OpenBook6.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 74%;
+    height: 79vh;
+    margin-top: 17vh;
+    margin-left: 5vh;
+    padding: 1vw 5vw 3.5vw 8vw;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.trip-page-icon {
+    border: 1px solid black;
+    color: black;
+    margin: 0px;
 }
 
 .trip-page-info {
-    position: absolute;
-    top:21%;
-    left:8%;    
-   
+    border: 1px solid black;
+    text-align: left;
+    width: 40%;
 }
 
-.trip-page-info p {
-    text-align: left;
-  
-   
+.trip-page-info a {
+    border: 1px solid black;
 }
 
 .trip-page-note-form {
-    position: absolute;
-    top:28%;
-    left: 9%;  
-    border:1px solid black;  
-}
-.trip-page-note-form-child {
-    margin:5px 30px 5px 50px;
-    border:1px solid black;
+    margin: 10px 0px 12px 20px;
 }
 
-.flex-container {
-    display:flex;
+
+
+.flex-container-form {
+    display: flex;
     justify-content: space-between;
+    border: 1px solid red;
 }
 
 .note-form-date-line {
     border-bottom: 1px solid grey;
 }
-.trip-page-note-form-img, .trip-page-notes-list-img {
-    width:20px;
-    height:14px;
+
+.trip-page-note-form-img,
+.trip-page-notes-list-img {
+    width: 20px;
+    height: 14px;
 }
 
-.trip-page-notes-list {
-    position: absolute;
-    top:36%;
-    left: 10%; 
-}
-.notes-list-headline{
-    font-weight: bold; 
+.notes-list-headline {
+    font-weight: bold;
     font-size: 25px;
 }
 
-.trip-page-notes-list-item {   
-    margin-top: 20px;   
+.trip-page-note-form-child {
+    margin: 0px 0px 5px 50px;
+    border: 3px solid green;
 }
 
+.trip-page-notes-list-child {
+    min-width: 30%;
+    border: 1px solid black;
+    position: relative;
+}
+
+.trip-page-notes-list-item {
+    margin-top: 15px;
+}
 
 .notes-list-item-city {
-    font-weight: bold; 
+    font-weight: bold;
     font-size: 28px;
-    border:1px solid black;
+    border: 1px solid black;
 }
+
 .notes-list-item-date {
     font-size: 18px;
     text-align: right;
 }
+
 .notes-list-headline {
-    font-weight: bold; 
+    font-weight: bold;
     font-size: 25px;
     text-align: left;
 }
 
-.trip-page-notes-list-child{
-    min-width: 30%;
-    margin:5px 100px 5px 10px;
-    border:1px solid black; 
-    position: relative;
-}
-
 .notes-list-item-city {
     text-decoration: none;
-    color:black;
+    color: black;
     font-size: 20px;
-    margin-left:50px;
+    margin-left: 50px;
 }
+
 .notes-list-item-title {
-    color:#fff;
+    color: #fff;
     text-shadow: 1px 1px 1px grey;
     font-size: 20px;
 }
+
 .notes-list-item-photo {
     background-color: #D9D9D9;
-    border:1px solid black;
-    width:200px;
-    height:100px;
+    border: 1px solid black;
+    width: 190px;
+    height: 100px;
 }
+
 .notes-list-item-link {
     position: absolute;
-    top:80px;
-    left:130px;
+    top: 70%;
+    left: 50%;
+}
+
+.trip-page-content-top {
+    border: 1px solid pink;
+}
+
+
+
+
+
+@media all and (max-width:1200px) {
+    .trip-page-content {
+        margin-top: 18vh;
+    }
+
+    .trip-page-note-form {
+        margin: 10px 0px 12px 0px;
+    }
+
+    .trip-page-note-form-child {
+        display: flex;
+    }
+
+    .note-form-date-line {
+        border: 1px solid grey;
+    }
+
+    .trip-page-note-form-child {
+        margin: 0px;
+    }
+}
+
+@media all and (max-width:1140px) {
+    .trip-page-content {
+        width: 78%;
+        height: 78vh;
+    }
+}
+
+
+@media all and (max-width:1060px) {
+    .trip-page {
+        background-image: url('');
+    }
+
+    .trip-page-content {
+        width: 82%;
+        height: 78vh;
+        margin: 18vh auto 0px;
+    }
+
+    .notes-list-item-photo {
+        width: 170px;
+        height: 90px;
+    }
+
+    .trip-page-note-form-child {
+        display: block;
+    }
+
+    .note-form-date-line {
+        border: 1px solid grey;
+    }
+}
+
+@media all and (max-width:1020px) {
+    .trip-page-content {
+        width: 84%;
+        height: 78vh;
+        margin: 17vh auto 0px;
+    }
+
+    .notes-list-item-photo {
+        width: 150px;
+        height: 85px;
+    }
+}
+
+@media all and (max-width:950px) {
+    .trip-page-content {
+        width: 90%;
+        height: 76vh;
+        margin: 17vh auto 0px;
+    }
+}
+
+
+@media all and (max-width:900px) {
+    .trip-page-content-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flex-container-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        border: 1px solid red;
+    }
+
+    .trip-page-note-form {
+        margin: 0px 0px 0px 20px;
+    }
+
+    .trip-page-info {
+        display: flex;
+        padding-top: 30px;
+    }
+
+    .trip-page-content {
+        padding: 3vw 5vw 3.5vw 8vw;
+    }
+}
+@media all and (max-width:850px) {
+    .trip-page-content {
+        width: 92%;      
+    }
+}
+
+@media all and (max-width:800px) {
+    .trip-page-content {
+        background-image: url('../../../public/images/OpenBook7.png');
+        width: 58%;
+        height: 80vh;
+        padding: 4vw 5vw 3.5vw 4vw;
+        margin: 16vh 0px 0px;
+    }
+
+    .trip-page {
+        background-image: url('../../../public/images/Home8.png');
+    }
+    .notes-list-item-photo, .notes-list-item-link {
+        display: none;
+    }   
+    .trip-page-content-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .trip-page-info {
+         
+        width: 100%; 
+        padding: 0px;     
+    }
+    .notes-list-item-city {
+       margin-left: 15px;
+    }
+    .notes-list-item-date {
+        font-size: 14px;
+        text-align: right;
+    }
+}
+
+@media all and (max-width:750px) {
+    .home-page {
+        background-image: url('../../../public/images/Home11.png');
+    }
+}
+
+@media all and (max-width:620px) {
+    .trip-page {
+        background-image: url('');
+    }
 }

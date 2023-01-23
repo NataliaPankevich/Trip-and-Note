@@ -79,3 +79,33 @@
 .times {
     font-family: 'Times New Roman', Times, serif;
 } 
+
+
+
+@media all and (max-width:1350px) {
+    .note-form-tools {
+        display: flex;
+        flex-direction: column;       
+    } 
+    .note-form-tools button {
+        margin: 6px 2px;
+    }
+    .note-form-tools select {
+        margin: 5px 2px;     
+    }
+    .note-text {
+        background-color: #D9D9D9;
+        width:330px;   
+        height:230px; 
+    }
+}
+@media all and (max-width:1030px) {
+    .note-text {
+        background-color: #D9D9D9;
+        width:300px;   
+        height:230px; 
+    }
+}
+@media all and (max-width:650px) {
+   
+}
